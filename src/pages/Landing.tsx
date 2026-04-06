@@ -359,10 +359,9 @@ export function Landing() {
                 <LogoLoop />
               </ScrollReveal>
 
-              <ScrollReveal className="text-center space-y-8">
-                <AnimatedHeading text="Ready to " className="text-5xl font-bold text-ink sm:text-6xl md:text-7xl" />
-                <div className="flex items-center justify-center gap-2">
-                  <AnimatedHeading text="Ready to " className="hidden" />
+              <ScrollReveal className="text-center space-y-4">
+                <div className="flex items-baseline justify-center gap-1">
+                  <AnimatedHeading text="Ready to " className="text-5xl font-bold text-ink sm:text-6xl md:text-7xl" />
                   <RotatingText />
                 </div>
                 <BlurWords text="Start free today. No credit card needed." className="text-base text-muted md:text-lg" />
