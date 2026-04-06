@@ -12,6 +12,7 @@ import { SlideUpLines } from "../components/react-bits/SlideUpLines";
 import { AnimatedBackground } from "../components/react-bits/AnimatedBackground";
 import { MarqueeTestimonials } from "../components/react-bits/TestimonialSection";
 import { FloatingMenu } from "../components/react-bits/FloatingMenu";
+import { RotatingText } from "../components/react-bits/RotatingText";
 import { DEMO_CODE } from "../lib/demoSeed";
 import { parseInviteFromSearch } from "../lib/inviteParam";
 import { SET_POWERS } from "../lib/setPowers";
@@ -353,7 +354,11 @@ export function Landing() {
               </section>
 
               <ScrollReveal className="text-center space-y-8">
-                <AnimatedHeading text="Ready to simplify?" className="text-5xl font-bold text-ink sm:text-6xl md:text-7xl" />
+                <AnimatedHeading text="Ready to " className="text-5xl font-bold text-ink sm:text-6xl md:text-7xl" />
+                <div className="flex items-center justify-center gap-2">
+                  <AnimatedHeading text="Ready to " className="hidden" />
+                  <RotatingText />
+                </div>
                 <BlurWords text="Start free today. No credit card needed." className="text-base text-muted md:text-lg" />
                 <motion.button
                   type="button"
