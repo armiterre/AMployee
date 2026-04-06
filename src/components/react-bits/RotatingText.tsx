@@ -21,15 +21,16 @@ export function RotatingText() {
   }, []);
 
   return (
-    <div className="relative inline-block min-h-[1.2em] flex items-center">
+    <div className="relative inline-block">
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute text-5xl font-bold text-ink sm:text-6xl md:text-7xl bg-gradient-to-r from-accent via-teal-300 to-accent bg-[length:200%_auto] bg-clip-text text-transparent whitespace-nowrap"
+          initial={{ opacity: 0, y: 20, rotateX: -90 }}
+          animate={{ opacity: 1, y: 0, rotateX: 0 }}
+          exit={{ opacity: 0, y: -20, rotateX: 90 }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          className="inline-block text-5xl font-bold text-ink sm:text-6xl md:text-7xl bg-gradient-to-r from-accent via-teal-300 to-accent bg-[length:200%_auto] bg-clip-text text-transparent"
+          style={{ perspective: "1000px" }}
         >
           {words[index]}
         </motion.span>
