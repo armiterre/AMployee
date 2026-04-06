@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-0 min-h-screen bg-[#0c0f14] text-ink antialiased;
+  background-image: radial-gradient(
+    ellipse 80% 50% at 50% -20%,
+    rgba(61, 214, 195, 0.08),
+    transparent
+  );
+}
+
+#root {
+  min-height: 100vh;
+}

@@ -1,0 +1,88 @@
+================================================================================
+  AMployee — HOW TO RUN (BEGINNER) + DEMO PASSWORDS
+================================================================================
+
+INSTALL NODE.JS (ONCE)
+----------------------
+  https://nodejs.org  →  download LTS  →  install  →  restart PC if needed.
+
+
+OPEN TERMINAL IN THE PROJECT FOLDER
+-----------------------------------
+  File Explorer → Documents → Projects → bizsuite
+  Click the address bar, type:  cmd  →  Enter
+
+
+COMMANDS (ONE PER LINE, PRESS ENTER AFTER EACH)
+-----------------------------------------------
+  cd c:\Users\olivi\OneDrive\Documents\Projects\bizsuite
+
+  npm install
+
+  npm run dev
+
+Then open the URL shown (usually http://localhost:5173/).
+
+
+OTHER WAY TO RUN (PRODUCTION BUILD ON YOUR PC)
+----------------------------------------------
+After npm install, you can also build static files and preview:
+
+  npm run build
+
+  npm run preview
+
+Open the URL it prints (often http://localhost:4173/). Good for testing a
+“closer to production” bundle. For everyday work, use npm run dev.
+
+
+STOP THE SERVER
+---------------
+  Ctrl + C   in the terminal window.
+
+
+HOMEPAGE FLOW
+-------------
+  Begin      → create workplace, join with code, or Try sandbox (demo).
+  Know more  → full list of demo roles and passwords (same as below).
+
+
+DEMO — TRY SANDBOX PASSWORDS
+----------------------------
+On Begin → Open sandbox: pick a power, type its password, Enter demo.
+
+  Power                  Role / who              Password
+  ---------------------  ----------------------  ------------
+  Admin HQ               Owner                   amp-hq
+  Operations Command     Manager                 amp-ops
+  People Desk            HR                      amp-people
+  Crew — Floor Lead      Employee (Alex)         amp-crew
+  Crew — Sales           Employee (Riley)        amp-crew2
+
+Demo workplace code (join flow): AMPY01
+
+Crew lands on Overview first; use Clock in in the menu for the big clock.
+Leads see weekly time exports on Dashboard — Excel only from there.
+
+
+NO AUTO EXCEL ON CLOCK-OUT
+--------------------------
+Ending a shift saves data only. Managers / Owner / HR download .xlsx from
+Dashboard (and Payroll for Owner/HR) when they choose.
+
+
+INVITE LINKS (LOCAL STORAGE)
+----------------------------
+Personal invite links only work in the same browser profile where the workplace
+exists (data is local). On another device, use the workplace invite code with
+Start → Join with code.
+
+If you’re already signed in and open an invite link, the app shows the invite
+screen so you can accept; Cancel returns you to the app.
+
+
+TROUBLESHOOTING
+---------------
+  "npm is not recognized"  → Install Node.js, restart PC.
+
+================================================================================
