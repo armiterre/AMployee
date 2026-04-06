@@ -13,6 +13,7 @@ import { AnimatedBackground } from "../components/react-bits/AnimatedBackground"
 import { MarqueeTestimonials } from "../components/react-bits/TestimonialSection";
 import { FloatingMenu } from "../components/react-bits/FloatingMenu";
 import { RotatingText } from "../components/react-bits/RotatingText";
+import { LogoLoop } from "../components/react-bits/LogoLoop";
 import { DEMO_CODE } from "../lib/demoSeed";
 import { parseInviteFromSearch } from "../lib/inviteParam";
 import { SET_POWERS } from "../lib/setPowers";
@@ -352,6 +353,11 @@ export function Landing() {
                   </ScrollReveal>
                 </ScrollReveal>
               </section>
+
+              <ScrollReveal className="text-center space-y-12">
+                <AnimatedHeading text="Trusted by industry leaders" className="text-3xl font-bold text-ink sm:text-4xl md:text-5xl" />
+                <LogoLoop />
+              </ScrollReveal>
 
               <ScrollReveal className="text-center space-y-8">
                 <AnimatedHeading text="Ready to " className="text-5xl font-bold text-ink sm:text-6xl md:text-7xl" />

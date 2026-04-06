@@ -21,7 +21,7 @@ export function RotatingText() {
   }, []);
 
   return (
-    <div className="relative inline-block">
+    <div className="relative inline-block py-4">
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}
